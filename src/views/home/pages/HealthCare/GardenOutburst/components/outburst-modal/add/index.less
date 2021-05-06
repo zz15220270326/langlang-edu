@@ -1,0 +1,50 @@
+.flex-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-style {
+  margin: 1.2rem 0;
+  .flex-center;
+  .tag {
+    flex: 2;
+    .flex-center;
+  }
+  .select-menu {
+    flex: 7;
+    text-align: center;
+  }
+  .content {
+    flex: 8;
+    .flex-center;
+  }
+}
+.add-outBurstContent {
+  height: 45rem;
+  margin-top: 1.2rem;
+  overflow-y: auto;
+  .imgs {
+    .content-style;
+    margin: 1.8rem 0;
+    position: relative;
+    .ivu-btn {
+      position: relative;
+      right: 27rem;
+    }
+    .img-wrapper {
+      position: absolute;
+      left: 25rem;
+      height: 6.66rem;
+      overflow: auto;
+      img {
+        width: 6rem;
+        height: 6rem;
+        &:hover {
+          opacity: 0.8;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+#flex-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teacher-special-content {
+  margin-top: 1.2rem;
+  height: 80vh;
+  .teacher-card-wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+    .teacher-card {
+      float: left;
+      width: 20%;
+      height: 20rem;
+      margin: 0.8rem 2%;
+      // padding: 2rem 0;
+      border-radius: 15%;
+      overflow: hidden;
+      background-color: #edecec;
+      .img-content {
+        .operations {
+          position: absolute;
+          .ivu-btn {
+            margin: 0 0.3rem;
+          }
+        }
+        flex: 5;
+        #flex-center;
+        background-color: #edecec;
+        img {
+          margin-top: 1.2rem;
+          width: 11rem;
+          height: 11rem;
+        }
+      }
+      .text-content {
+        flex: 2;
+        width: 100%;
+        flex-direction: column;
+        #flex-center;
+        .top {
+          margin: 0.5rem;
+          flex: 1;
+          #flex-center;
+          width: 80%;
+          justify-content: space-evenly;
+          overflow: auto;
+          .name {
+            flex: 4;
+            color: #333;
+            font-size: 1.2rem;
+          }
+          .identify {
+            flex: 1;
+            width: 100%;
+            color: orange;
+            font-size: 1rem;
+          }
+        }
+        .bottom {
+          flex: 1;
+          #flex-center;
+          position: relative;
+          .age {
+            flex: 1;
+            font-size: 1rem;
+            color: #999;
+            #flex-center;
+            position: absolute;
+            top: -2rem;
+            left: 0;
+          }
+          .manage-class {
+            position: relative;
+            bottom: 0;
+            flex: 3;
+            font-size: 1.2rem;
+            text-align: right;
+            color: #999;
+          }
+          .check-teacher {
+            position: absolute;
+            right: 1.2rem;
+            top: -2rem;
+          }
+        }
+      }
+    }
+  }
+  .page {
+    margin-top: 1.2rem;
+    #flex-center;
+  }
+}

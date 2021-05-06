@@ -1,0 +1,59 @@
+#flex-style {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#common-style {
+  margin-top: 0.8rem;
+  #flex-style;
+  .tag {
+    flex: 2;
+    #flex-style;
+  }
+  .content {
+    flex: 7;
+    margin-right: 3rem;
+  }
+}
+.base-info {
+  #flex-style;
+  flex-direction: row;
+  .input {
+    flex: 7;
+    .input-name {
+      #common-style;
+    }
+    .select-gender {
+      #common-style;
+    }
+    .nation {
+      #common-style;
+    }
+    .birth-date {
+      #common-style;
+    }
+    .entry-time {
+      #common-style;
+    }
+    .select-class {
+      #common-style;
+    }
+    .face {
+      #common-style;
+    }
+  }
+  .upload {
+    flex: 3;
+    #flex-style;
+    img {
+      width: 10rem;
+      height: 8rem;
+    }
+  }
+}
+.add-parent-info {
+  margin-top: 0.8rem;
+  width: 100%;
+  text-align: center;
+}

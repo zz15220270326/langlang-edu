@@ -1,0 +1,50 @@
+.full_flex() {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upload-page {
+  height: 34rem;
+  overflow-y: auto;
+  position: relative;
+  bottom: 1.2rem;
+  .list-item {
+    padding-top: 5rem;
+    width: 100%;
+    .full_flex();
+    flex-direction: row;
+    .img {
+      flex: 2;
+      .full_flex();
+      img {
+        width: 10rem;
+        // height: 7rem;
+        height: 100%;
+      }
+    }
+    .input {
+      flex: 5;
+      .full_flex();
+    }
+    .operations {
+      flex: 2;
+      .full_flex();
+      .ivu-btn {
+        margin: 0 0.8rem;
+      }
+    }
+  }
+  .to-content {
+    position: fixed;
+    top: 10.8rem;
+    left: 42%;
+    .select-menu {
+      width: 12rem;
+      z-index: 999;
+    }
+    .ivu-btn {
+      margin: 0 0.8rem;
+    }
+  }
+}

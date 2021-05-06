@@ -1,0 +1,43 @@
+.full_flex() {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.local-upload {
+  height: 50vh;
+  .full_flex();
+  flex-direction: column;
+  position: relative;
+  .img-list {
+    // background-color: #f7a9;
+    flex: 1.2;
+    overflow: auto;
+    height: 12rem;
+    overflow-y: auto;
+    .full_flex();
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    .select-item {
+      text-align: center;
+      width: 15%;
+      img {
+        width: 6rem;
+        height: 6rem;
+      }
+    }
+  }
+  .empty-wrapper {
+    position: absolute;
+    top: 10%;
+  }
+  .handle-operations {
+    flex: 1;
+    .full_flex();
+    .ivu-btn {
+      margin: 0 1rem;
+    }
+    position: absolute;
+    bottom: 0.3rem;
+  }
+}

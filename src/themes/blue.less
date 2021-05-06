@@ -1,0 +1,24 @@
+@import '~view-design/src/styles/index.less';
+
+// Here are the variables to cover, such as:
+@primary-color: #2d8cf0;
+
+@sider-color: #36adea;
+
+@tab-color: #0094ff;
+
+.ivu-layout-sider-trigger {
+  background: @sider-color;
+}
+
+.ivu-table {
+  &::-webkit-scrollbar {
+    width: 0.4rem;
+    color: @sider-color;
+    display: block;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 0.6rem;
+    background-color: #dedede;
+  }
+}

@@ -1,0 +1,37 @@
+.full_flex() {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.garden-honor-content {
+  .full_flex();
+  justify-content: left;
+  flex-wrap: wrap;
+  margin: 0.8rem 0;
+  .content-item {
+    width: 22%;
+    margin: 1rem;
+    .box {
+      width: 100%;
+      img {
+        width: 16rem;
+        height: 10rem;
+      }
+      .desc {
+        padding: 0.3rem 0;
+        .full_flex();
+        .tag {
+          flex: 1;
+        }
+        .operations {
+          flex: 3;
+          text-align: right;
+          .ivu-btn {
+            margin: 0 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}

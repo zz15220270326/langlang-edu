@@ -1,0 +1,320 @@
+{
+  "router_list": [
+    {
+      "path": "GardenMain",
+      "showName": "概况",
+      "iconUrl": "",
+      "component": "@HomePages/GardenMain",
+      "children": [
+        { "path": "/", "name": "", "showName": "", "redirect": "Overview" },
+        { "path": "Overview", "name": "Overview", "showName": "园所总览" },
+        { "path": "HealthStats", "name": "HealthStats", "showName": "健康看板" }
+      ]
+    },
+    {
+      "path": "ChildrenProfile",
+      "showName": "幼儿档案",
+      "iconUrl": "",
+      "component": "@HomePages/ChildrenProfile",
+      "children": [
+        { "path": "/", "name": "", "showName": "", "redirect": "BabyManage" },
+        { "path": "BabyManage", "name": "BabyManage", "showName": "幼儿信息" },
+        { "path": "Growup", "name": "Growup", "showName": "成长档案" }
+      ]
+    },
+    {
+      "path": "WorkerManagement",
+      "showName": "职工管理",
+      "iconUrl": "",
+      "component": "@HomePages/WorkerManagement",
+      "children": [
+        { "path": "/", "name": "", "showName": "", "redirect": "StaffManage" },
+        {
+          "path": "StaffManage",
+          "name": "StaffManage",
+          "showName": "职工信息"
+        },
+        { "path": "AdminRole", "name": "AdminRole", "showName": "职位权限" },
+        {
+          "path": "MienOfTeacher",
+          "name": "MienOfTeacher",
+          "showName": "教师风采"
+        }
+      ]
+    },
+    {
+      "path": "StaffAttdence",
+      "showName": "职工考勤",
+      "iconUrl": "",
+      "component": "@HomePages/StaffAttdence",
+      "children": [
+        {
+          "path": "/",
+          "name": "",
+          "showName": "",
+          "redirect": "TeacherCheckingReport"
+        },
+        {
+          "path": "TeacherCheckingReport",
+          "name": "TeacherCheckingReport",
+          "showName": "全园报表"
+        },
+        {
+          "path": "TeacherCheckingOne",
+          "name": "TeacherCheckingOne",
+          "showName": "个人报表"
+        },
+        {
+          "path": "TeacherCheckingRole",
+          "name": "TeacherCheckingRole",
+          "showName": "考勤设置"
+        },
+        {
+          "path": "TeacherWorkShift",
+          "name": "TeacherWorkShift",
+          "showName": "班次管理"
+        },
+        {
+          "path": "TeacherSchedule",
+          "name": "TeacherSchedule",
+          "showName": "排班表"
+        }
+      ]
+    },
+    {
+      "path": "ClassManagement",
+      "showName": "班级管理",
+      "iconUrl": "",
+      "component": "@HomePages/ClassManagement",
+      "children": [
+        { "path": "/", "name": "", "showName": "", "redirect": "babyChecking" },
+        {
+          "path": "babyChecking",
+          "name": "babyChecking",
+          "showName": "幼儿考勤"
+        },
+        {
+          "path": "LangyunClass",
+          "name": "LangyunClass",
+          "showName": "班级信息"
+        },
+        {
+          "path": "LangyunClassAlbum",
+          "name": "LangyunClassAlbum",
+          "showName": "班级相册"
+        }
+      ]
+    },
+    {
+      "path": "PersonalPlan",
+      "showName": "个人计划",
+      "iconUrl": "",
+      "component": "@HomePages/PersonalPlan",
+      "children": [
+        { "path": "/", "name": "", "showName": "", "redirect": "PlanOfClass" },
+        {
+          "path": "PlanOfClass",
+          "name": "PlanOfClass",
+          "showName": "班级计划"
+        },
+        {
+          "path": "PlanOfSemester",
+          "name": "PlanOfSemester",
+          "showName": "学期计划"
+        },
+        { "path": "PlanOfYear", "name": "PlanOfYear", "showName": "整年计划" },
+        {
+          "path": "SummaryOfWork",
+          "name": "SummaryOfWork",
+          "showName": "工作总结"
+        },
+        {
+          "path": "ReportOfWork",
+          "name": "ReportOfWork",
+          "showName": "工作汇报"
+        }
+      ]
+    },
+    {
+      "path": "GardenApprove",
+      "showName": "园务审批",
+      "iconUrl": "",
+      "component": "@HomePages/GardenApprove",
+      "children": [
+        {
+          "path": "/",
+          "name": "",
+          "showName": "",
+          "redirect": "AskOfLeaveForReview"
+        },
+        {
+          "path": "AskOfLeaveForReview",
+          "name": "AskOfLeaveForReview",
+          "showName": "幼儿请假"
+        },
+        {
+          "path": "PlanOfClassForReview",
+          "name": "PlanOfClassForReview",
+          "showName": "班级计划"
+        },
+        {
+          "path": "PlanOfSemesterForReview",
+          "name": "PlanOfSemesterForReview",
+          "showName": "学期计划"
+        },
+        {
+          "path": "PlanOfYearForReview",
+          "name": "PlanOfYearForReview",
+          "showName": "整年计划"
+        },
+        {
+          "path": "SummaryOfWorkForReview",
+          "name": "SummaryOfWorkForReview",
+          "showName": "工作总结"
+        }
+      ]
+    },
+    {
+      "path": "HealthCare",
+      "showName": "卫生保健",
+      "iconUrl": "",
+      "component": "@HomePages/HealthCare",
+      "children": [
+        {
+          "path": "/",
+          "name": "",
+          "showName": "",
+          "redirect": "GardenRecipes"
+        },
+        {
+          "path": "GardenRecipes",
+          "name": "GardenRecipes",
+          "showName": "每周食谱"
+        },
+        {
+          "path": "GardenPharmcay",
+          "name": "GardenPharmcay",
+          "showName": "用药服药记录"
+        },
+        {
+          "path": "GardenOutburst",
+          "name": "GardenOutburst",
+          "showName": "突发状况"
+        }
+      ]
+    },
+    {
+      "path": "HealthBorder",
+      "showName": "健康防疫",
+      "iconUrl": "",
+      "component": "@HomePages/HealthBorder",
+      "children": [
+        {
+          "path": "/",
+          "name": "",
+          "showName": "",
+          "redirect": "FaceTemperatureRecord"
+        },
+        {
+          "path": "FaceTemperatureRecord",
+          "name": "FaceTemperatureRecord",
+          "showName": "人脸测温记录"
+        },
+        {
+          "path": "InfantDailyHealth",
+          "name": "InfantDailyHealth",
+          "showName": "幼儿日常保健"
+        },
+        {
+          "path": "StaffHealthRecords",
+          "name": "StaffHealthRecords",
+          "showName": "职工健康管理"
+        }
+      ]
+    },
+    {
+      "path": "NoticeActive",
+      "showName": "通知动态",
+      "iconUrl": "",
+      "component": "@HomePages/NoticeActive",
+      "children": [
+        {
+          "path": "/",
+          "name": "",
+          "showName": "",
+          "redirect": "NoticeOfGarden"
+        },
+        {
+          "path": "NoticeOfGarden",
+          "name": "NoticeOfGarden",
+          "showName": "园务通知"
+        },
+        {
+          "path": "NoticeOfClass",
+          "name": "NoticeOfClass",
+          "showName": "班级通知"
+        },
+        {
+          "path": "NoticeOfGardenIncludeParents",
+          "name": "NoticeOfGardenIncludeParents",
+          "showName": "园内通知"
+        },
+        {
+          "path": "NoticeOfEdubureauOfGarden",
+          "name": "NoticeOfEdubureauOfGarden",
+          "showName": "主管部门通知"
+        },
+        {
+          "path": "NoticeOfSystem",
+          "name": "NoticeOfSystem",
+          "showName": "系统消息"
+        },
+        {
+          "path": "gardenDynamics",
+          "name": "gardenDynamics",
+          "showName": "园所动态"
+        }
+      ]
+    },
+    {
+      "path": "SystemManagement",
+      "showName": "系统管理",
+      "iconUrl": "",
+      "component": "@HomePages/SystemManagement",
+      "children": [
+        {
+          "path": "/",
+          "name": "",
+          "showName": "",
+          "redirect": "ManageOfAccount"
+        },
+        {
+          "path": "ManageOfAccount",
+          "name": "ManageOfAccount",
+          "showName": "账户管理"
+        },
+        {
+          "path": "ManageOfGarden",
+          "name": "ManageOfGarden",
+          "showName": "园所信息"
+        },
+        {
+          "path": "MienOfGarden",
+          "name": "MienOfGarden",
+          "showName": "园所风采"
+        },
+        {
+          "path": "ManageOfGardenHardware",
+          "name": "ManageOfGardenHardware",
+          "showName": "硬件管理"
+        },
+        {
+          "path": "LangyunGardenVideo",
+          "name": "LangyunGardenVideo",
+          "showName": "园所视频"
+        },
+        { "path": "gardenSet", "name": "gardenSet", "showName": "基础设置" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+#flex-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent-info {
+  margin-top: 1.6rem;
+  #flex-center;
+  .tag {
+    flex: 3;
+    #flex-center;
+  }
+  .content {
+    flex: 17;
+    .base {
+      #flex-center;
+      .select-type {
+        flex: 1;
+        margin: auto;
+      }
+      .input {
+        flex: 6;
+        #flex-center;
+        justify-content: space-evenly;
+      }
+      .op {
+        flex: 2.5;
+        width: 100%;
+        margin: auto;
+        margin-left: 0.5rem;
+        .ivu-btn {
+          margin: 0 0.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.flex-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infos {
+  height: 40rem;
+  overflow-y: auto;
+  position: relative;
+  .base-info {
+    .flex-center;
+    flex-direction: row;
+    .upload {
+      flex: 3;
+      .flex-center;
+    }
+  }
+}
+
+.parent-info {
+  margin-top: 1.6rem;
+  .flex-center;
+  .tag {
+    flex: 3;
+    .flex-center;
+  }
+  .content {
+    flex: 17;
+    .base {
+      padding-top: 1rem;
+      .flex-center;
+      .select-type {
+        flex: 1;
+        margin: auto;
+      }
+      .input {
+        flex: 6;
+        .flex-center;
+        justify-content: space-evenly;
+      }
+      .op {
+        flex: 1;
+        width: 100%;
+        margin: auto;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}
+
+.add-parent-info {
+  margin-top: 1.6rem;
+  width: 100%;
+  text-align: center;
+  // position: fixed;
+  position: absolute;
+  left: 0;
+  // bottom: 23rem;
+  bottom: 12.8rem;
+}

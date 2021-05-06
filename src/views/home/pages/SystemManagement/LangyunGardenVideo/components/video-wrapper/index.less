@@ -1,0 +1,26 @@
+.full-flex() {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.query-menu {
+  background-color: #f6f6f6;
+  padding: 1.2rem;
+  .full-flex();
+  .progress {
+    flex: 2;
+    .full-flex();
+    .progress-content {
+      flex: 1;
+    }
+    .desc {
+      flex: 3;
+    }
+  }
+  .operations {
+    flex: 1;
+    .full-flex();
+    justify-content: space-evenly;
+  }
+}

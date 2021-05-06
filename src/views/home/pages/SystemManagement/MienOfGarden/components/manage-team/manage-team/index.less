@@ -1,0 +1,83 @@
+.full_flex() {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.common-content {
+  margin-top: 0.66rem;
+  .full_flex();
+  .tag {
+    flex: 4;
+    text-align: center;
+  }
+  .content {
+    flex: 7;
+    margin-right: 3rem;
+  }
+}
+.op-manage-item {
+  .items-title {
+    padding: 0.6rem 0;
+    .full_flex();
+    .select {
+      flex: 3;
+      text-align: center;
+    }
+    .import {
+      flex: 1;
+      text-align: right;
+      margin-right: 3rem;
+    }
+  }
+  .items-content {
+    height: 36rem;
+    overflow-y: auto;
+    .full_flex();
+    flex-direction: column;
+    .top {
+      flex: 8;
+      .full_flex();
+      .left {
+        flex: 3;
+        height: 100%;
+        .career {
+          .common-content;
+        }
+        .birth-day {
+          .common-content;
+        }
+        .teach-moto {
+          .common-content;
+        }
+        .teacher-introduce {
+          .common-content;
+        }
+        .teacher-albums {
+          .common-content;
+          .op {
+            .full_flex();
+            .ivu-btn {
+              margin: 0 0.6rem;
+            }
+          }
+          .imgs {
+            padding: 0.6rem 0;
+            .full_flex();
+            justify-content: left;
+            flex-wrap: wrap;
+            img {
+              width: 20%;
+              height: 20%;
+              margin: 0.3rem;
+              &:hover {
+                opacity: 0.8;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

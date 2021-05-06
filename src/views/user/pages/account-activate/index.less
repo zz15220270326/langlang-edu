@@ -1,0 +1,61 @@
+.flex_common() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex_full() {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.account-activate {
+  .activate-content {
+    padding-top: 8rem;
+    padding-left: 24rem;
+    .flex_full();
+    .activate-card {
+      position: fixed;
+      right: 12%;
+      bottom: 24%;
+      height: 30rem;
+      width: 27rem;
+      font-size: 1.2rem;
+      .input-content {
+        text-align: center;
+        .input {
+          width: 17.6rem;
+          margin-top: 0.85rem;
+          margin-bottom: 0.25rem;
+        }
+        .get-vrcode {
+          margin: 0.6rem 0;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          .vrcode-input {
+            width: 7.2rem;
+          }
+        }
+      }
+    }
+    .op-content {
+      text-align: center;
+      // .top {
+      // }
+      .to-login {
+        .ivu-btn {
+          color: #0094ff;
+          :hover {
+            color: skyblue;
+          }
+        }
+      }
+      .to-notice {
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 0.96rem;
+      }
+    }
+  }
+}

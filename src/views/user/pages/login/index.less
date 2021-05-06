@@ -1,0 +1,71 @@
+.flex_full() {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-evenly() {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.login-page {
+  .login-content {
+    // height: 100%;
+    padding-top: 8rem;
+    padding-left: 24rem;
+    .flex_full();
+    .login-card {
+      position: fixed;
+      right: 12%;
+      bottom: 24%;
+      height: 30rem;
+      width: 27rem;
+      // border-radius: 20%;
+      font-size: 1.2rem;
+      .ivu-select {
+        margin: 0 3.6rem;
+      }
+      .login-title {
+        .flex_full();
+        margin-top: 1.2rem;
+        font-weight: 560;
+      }
+      .input-content {
+        .select-registry {
+          padding: 1.2rem 0;
+          .flex_full();
+          .ivu-btn {
+            margin: 0 0.92rem;
+          }
+        }
+        .input-info {
+          padding: 1rem 0;
+          margin: 0 1.6rem;
+          .input {
+            margin: 0.8rem 0;
+          }
+        }
+        .operations {
+          .flex_full();
+          justify-content: space-evenly;
+          .top {
+            .flex-evenly();
+            .ivu-btn {
+              width: 6.6rem;
+            }
+          }
+        }
+        .other {
+          padding: 1rem 0;
+          .flex_full();
+          .ivu-btn {
+            width: 6.4rem;
+            margin: 0 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}

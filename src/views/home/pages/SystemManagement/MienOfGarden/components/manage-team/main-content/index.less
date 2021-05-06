@@ -1,0 +1,52 @@
+.full_flex() {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m-t-content {
+  width: 100%;
+  .full_flex();
+  justify-content: left;
+  flex-wrap: wrap;
+  margin: 0.8rem 0;
+  color: #666;
+  padding: 1rem 0;
+  .content-item {
+    margin: 0.5rem 0.5rem;
+    width: 23%;
+    height: 17.6rem;
+    .box {
+      .full_flex();
+      flex-direction: column;
+      .top {
+        flex: 2;
+        .full_flex();
+        flex-direction: row;
+        img {
+          height: 7.2rem;
+          width: 8.1rem;
+        }
+      }
+      .bottom {
+        flex: 2;
+        .full_flex();
+        // flex-wrap: wrap;
+        .left {
+          flex: 2;
+        }
+        .middle {
+          flex: 3;
+          .full_flex();
+        }
+        .right {
+          flex: 2;
+          .full_flex();
+        }
+      }
+      .ivu-btn {
+        margin: 0 0.3rem;
+      }
+    }
+  }
+}

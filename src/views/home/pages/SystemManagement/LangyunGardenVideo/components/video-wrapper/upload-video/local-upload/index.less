@@ -1,0 +1,41 @@
+.full_flex() {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.local-upload-video {
+  height: 50rem;
+  overflow-y: auto;
+  position: relative;
+  .main {
+    height: 70%;
+    .full_flex();
+    flex-direction: column;
+    .video-wrapper {
+      width: 100%;
+      height: 25rem;
+      overflow-y: auto;
+    }
+    .progress-bar {
+      position: fixed;
+      bottom: 0;
+    }
+    .upload-wrapper {
+      position: absolute;
+      left: 43%;
+      bottom: 27%;
+    }
+    .desc-tag {
+      position: fixed;
+      bottom: 12rem;
+    }
+  }
+  .bottom {
+    height: 20%;
+    .full_flex();
+    .ivu-btn {
+      margin: 0 0.75rem;
+    }
+  }
+}

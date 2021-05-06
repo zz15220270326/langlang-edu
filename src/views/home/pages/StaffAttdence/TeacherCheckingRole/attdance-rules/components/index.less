@@ -1,0 +1,38 @@
+.flex-around {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.common-style2 {
+  background-color: #fff;
+  height: 3rem;
+  margin-top: 1.2rem;
+  .flex-around;
+  .left {
+    flex: 1;
+    text-align: center;
+  }
+  .middle {
+    flex: 1;
+  }
+  .right {
+    flex: 1;
+  }
+}
+.attdance-rules {
+  color: #666;
+  height: 50vh;
+  padding: 2.4rem 0;
+  .rule-item {
+    .common-style2;
+  }
+  .eidt-button {
+    width: 100%;
+    margin-top: 3rem;
+    text-align: center;
+    .modal-child {
+      background-color: pink;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.full_flex() {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.common-content {
+  padding: 1rem 0;
+  .full_flex();
+  .tag {
+    flex: 2;
+    text-align: right;
+    margin-right: 6rem;
+  }
+  .content {
+    flex: 7;
+    margin-right: 16rem;
+  }
+}
+.base-info {
+  width: 100%;
+  margin-top: 3rem;
+  .full_flex();
+  .left {
+    flex: 7;
+    .operations {
+      text-align: center;
+      .ivu-btn {
+        margin: 0 1.2rem;
+      }
+    }
+  }
+  .right {
+    flex: 4;
+    text-align: center;
+    // .full_flex();
+    // flex-direction: column;
+    .ivu-btn {
+      margin-bottom: 6rem;
+    }
+  }
+}

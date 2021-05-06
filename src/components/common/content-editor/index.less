@@ -1,0 +1,33 @@
+.full_flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.common-style {
+  .tag {
+    flex: 2;
+    .full_flex();
+  }
+  .editor {
+    flex: 8;
+    height: 18rem;
+    overflow-y: auto;
+    flex-direction: column;
+  }
+}
+.main {
+  margin-top: 3.2rem;
+  height: 16rem;
+  .full_flex();
+  .common-style;
+}
+.input_content {
+  margin: 3rem 0;
+  height: 16rem;
+  .full_flex();
+  .common-style;
+  .editor {
+    height: 12rem;
+  }
+}

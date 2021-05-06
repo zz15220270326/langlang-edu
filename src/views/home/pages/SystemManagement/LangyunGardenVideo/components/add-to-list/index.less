@@ -1,0 +1,47 @@
+.full_flex() {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.common-style {
+  .full_flex();
+  padding: 1.6rem 0;
+  .tag {
+    flex: 4;
+    text-align: right;
+    margin-right: 3rem;
+  }
+  .content {
+    flex: 7;
+    margin-right: 10rem;
+    text-align: center;
+  }
+  .btn-group {
+    flex: 2;
+    .full_flex();
+    .ivu-btn {
+      margin: 0 0.5rem;
+      position: relative;
+      right: 5.6rem;
+    }
+  }
+}
+.add-to-list {
+  height: 38rem;
+  .main {
+    .list-item {
+      .common-style;
+    }
+  }
+  .bottom {
+    width: 100%;
+    margin: 10rem 0;
+    padding: 1.2rem 0;
+    text-align: center;
+    .ivu-btn {
+      margin: 0 0.75rem;
+      width: 6rem;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.full_flex() {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add-content {
+  height: 36rem;
+  overflow-y: auto;
+  .add-item {
+    margin: 0.8rem 0;
+    .full_flex();
+    .tag {
+      flex: 3;
+      text-align: right;
+      margin-right: 2rem;
+    }
+    .content {
+      flex: 7;
+      margin-right: 8rem;
+    }
+  }
+}

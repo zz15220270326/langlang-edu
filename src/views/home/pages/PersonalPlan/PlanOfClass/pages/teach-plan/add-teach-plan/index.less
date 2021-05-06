@@ -1,0 +1,50 @@
+.flex_common() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex_full() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.common {
+  .flex_full();
+  .left-content {
+    flex: 3;
+    .flex_common();
+  }
+  .right-content {
+    flex: 7;
+    .flex_common();
+  }
+}
+
+.add-teach-plan {
+  height: 40rem;
+  color: #666;
+  .top {
+    height: 20%;
+    .flex_full();
+    .left-top {
+      flex: 3;
+      // height: 100%;
+      .select-class {
+        .common;
+      }
+      .season-choose {
+        margin-top: 0.8rem;
+        .common;
+      }
+    }
+  }
+  .operations {
+    padding: 1rem 0;
+    text-align: center;
+    .ivu-btn {
+      margin: 0 0.8rem;
+      width: 6rem;
+    }
+  }
+}

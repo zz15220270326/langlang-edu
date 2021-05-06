@@ -1,0 +1,47 @@
+.full_flex() {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex_evenly() {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.query-menu {
+  padding: 0.8rem 0;
+  .full_flex();
+  .select-class {
+    flex: 1;
+    margin: 0 1rem;
+    .flex();
+  }
+  .inputs {
+    flex: 1.5;
+    .flex_evenly();
+  }
+  .query-and-delete {
+    flex: 4;
+    padding-left: 5rem;
+    .ivu-btn {
+      width: 6rem;
+      margin: 0.5rem;
+    }
+  }
+  .other-operations {
+    flex: 3;
+    .flex();
+    .ivu-btn {
+      margin: 0 0.6rem;
+      width: 6rem;
+    }
+  }
+}
